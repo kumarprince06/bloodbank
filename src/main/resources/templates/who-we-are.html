@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <title>Article</title>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- Navigator Start -->
+        <section id="navigator">
+            <div class="container">
+                <div class="path">
+                    <div class="path-main" style="color: darkred; display:inline-block;"><a th:href="@{/}">Home</a>
+                    </div>
+                    <div class="path-directio" style="color: grey; display:inline-block;"> / Who we are?</div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Navigator End -->
+
+        <!-- Who Start -->
+        <section id="who">
+            <div class="container">
+                <img src="imgs/logo.png" alt="">
+                <h1 style="padding-left: 15px;">Who We Are</h1>
+                <p style="margin-top: 0;">Welcome to our Blood Bank</p>
+                <section>
+                    <h2 style="padding-left: 15px;">Our Mission</h2>
+                    <p style="margin-top: 0;">Our mission is to bridge the gap between blood donors and recipients, ensuring timely access to
+                        life-saving blood products.</p>
+                </section>
+
+                <section>
+                    <h2 style="padding-left: 15px;">Our Team</h2>
+                    <p style="margin-top: 0;">We have a dedicated team of professionals committed to serving our community:</p>
+                    <ul>
+                        <li>Kumar Prince - CEO</li>
+                        <li>Nishant Singh - Medical Director</li>
+                        <li>Vineet Dubey - Operations Manager</li>
+                        <!-- Add more team members as needed -->
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 style="padding-left: 15px;">Our Values</h2>
+                    <p style="margin-top: 0;">We uphold the following values in all our endeavors:</p>
+                    <ul>
+                        <li>Compassion</li>
+                        <li>Integrity</li>
+                        <li>Excellence</li>
+                        <li>Collaboration</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+        <!-- Who End -->
+
+    </section>
+</body>
+
+</html>
