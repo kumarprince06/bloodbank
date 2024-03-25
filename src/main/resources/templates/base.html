@@ -69,28 +69,29 @@
 	<!-- Navbar 2 Start -->
 	<section id="Nav2">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<img src="imgs/logo.png" width="18%"></img>
+			<a th:href="@{/}"><img src="imgs/logo.png" width="88%"></img></a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link selected" th:href="@{/}">Home</a>
+						<a class="nav-link" th:href="@{/}">Home</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" >
 						<a class="nav-link" th:href="@{/about}">About Us</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#articles">Articles</a>
+					<li class="nav-item" >
+						<a class="nav-link" th:href="@{/article}">Articles</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" >
 						<a class="nav-link" th:href="@{/request}">Donations</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" th:href="@{/whoweare}">Who We Are ?</a>
+					<li class="nav-item" >
+						<a class="nav-link" th:href="@{/whoweare}">Who We Are?</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" >
 						<a class="nav-link" th:href="@{/contact}">Contact Us</a>
 					</li>
 				</ul>
+				
 				<!-- <button class="btn signup" onclick="window.location.href = 'signup.html';">New Account</button>
 				<button class="btn login" onclick="window.location.href = 'login.html';">Login</button> -->
 				<button class="btn signup" th:onclick="window.location.href = '@{/signup}';">New Account</button>
@@ -101,24 +102,7 @@
 	</section>
 	<!-- Navbar 2 End -->
 
-	<!-- Header Start -->
-	<section id="header">
-		<div class="container">
-			<!-- <h1>We are seeking for a better community health.</h1>
-					<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellat inventore nemo repudiandae
-						ipsum quos.</h4>
-					<button class="btn more" onclick= "window.location.href = 'About-us.html';">More</button> -->
-		</div>
-	</section>
-	<!-- Header End -->
 
-	<!-- Sub Header Start -->
-	<section id="sub-header">
-		<div class="container">
-			<h3>A SINGLE PINT CAN SAVE THREE LIVES, A SINGLE GESTURE CAN CREATE A MILLION SMILES.</h3>
-		</div>
-	</section>
-	<!-- Sub Header End -->
 
 	<div th:replace="${content}">
 
