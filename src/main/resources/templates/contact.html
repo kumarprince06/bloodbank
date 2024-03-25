@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+    <title>Article</title>
+</head>
+
+<body>
+
+    <section>
+
+        <!-- Navigator Start -->
+        <section id="navigator">
+            <div class="container">
+                <div class="path">
+                    <div class="path-main" style="color: darkred; display:inline-block;"><a th:href="@{/}">Home</a>
+                    </div>
+                    <div class="path-directio" style="color: grey; display:inline-block;"> / Contact Us</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- login Start -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 call">
+                        <div class="title">Contact</div>
+                        <img src="imgs/logo.png" alt="">
+                        <hr>
+                        <h4>Mobile: +91 861 726 6822</h3>
+                            <h4>Whatsapp: +91 890 246 6321</h3>
+                                <h4>Email: kumarprince.s0611@gmail.com</h3>
+                                    <hr>
+                                    <h3>Find Us On</h3>
+                                    <div class="icons">
+                                        <i class="fab fa-facebook-square fa-3x"></i>
+                                        <i class="fab fa-google-plus-square fa-3x"></i>
+                                        <i class="fab fa-twitter-square fa-3x"></i>
+                                        <i class="fab fa-whatsapp-square fa-3x"></i>
+                                        <i class="fab fa-youtube-square fa-3x"></i>
+                                    </div>
+                    </div>
+                    <div class="col-md-6 info">
+                        <div class="title">Message</div>
+                        <form action="submit">
+                            <input type="text" name="name" id="" placeholder="Name" required="">
+                            <input type="email" name="name" id="" placeholder="Email" required="">
+                            <input type="number" name="name" id="" placeholder="Phone" required="">
+                            <input type="text" name="title" id="" placeholder="Title" required="">
+                            <textarea name="message" id="" cols="10" rows="5" placeholder="Message"></textarea>
+                            <div class="reg-group">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- login End -->
+
+    </section>
+</body>
+
+</html>
